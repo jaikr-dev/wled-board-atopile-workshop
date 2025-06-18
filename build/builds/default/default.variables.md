@@ -9,8 +9,8 @@
 |  | `temperature_coefficient` | `[TemperatureCoefficient.X7R]` |
 | `rail_3v3_capacitor\|Capacitor` | `capacitance` | `([423µF, 517µF])` |
 |  | `max_voltage` | `([0V, InfinityV])` |
-|  | `temperature_coefficient` | `[TemperatureCoefficient.Y5V, TemperatureCoefficient.X7R, TemperatureCoefficient.X5R, TemperatureCoefficient.C0G, TemperatureCoefficient.X6R, TemperatureCoefficient.X7S, TemperatureCoefficient.X8R, TemperatureCoefficient.Z5U]` |
+|  | `temperature_coefficient` | `[TemperatureCoefficient.X8R, TemperatureCoefficient.Z5U, TemperatureCoefficient.C0G, TemperatureCoefficient.X5R, TemperatureCoefficient.Y5V, TemperatureCoefficient.X6R, TemperatureCoefficient.X7R, TemperatureCoefficient.X7S]` |
 | `rail_5v_capacitor\|Capacitor` | `capacitance` | `([423µF, 517µF])` |
 |  | `max_voltage` | `([0V, InfinityV])` |
-|  | `temperature_coefficient` | `[TemperatureCoefficient.Y5V, TemperatureCoefficient.X7R, TemperatureCoefficient.X5R, TemperatureCoefficient.C0G, TemperatureCoefficient.X6R, TemperatureCoefficient.X7S, TemperatureCoefficient.X8R, TemperatureCoefficient.Z5U]` |
+|  | `temperature_coefficient` | `[TemperatureCoefficient.X8R, TemperatureCoefficient.Z5U, TemperatureCoefficient.C0G, TemperatureCoefficient.X5R, TemperatureCoefficient.Y5V, TemperatureCoefficient.X6R, TemperatureCoefficient.X7R, TemperatureCoefficient.X7S]` |
 

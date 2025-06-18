@@ -31,8 +31,8 @@ module WLED_Controller:
     # Decoupling capacitor for ESP32 3.3V rail (recommended)
     rail_3v3_capacitor = new Capacitor
     rail_3v3_capacitor.capacitance = 470uF +/- 10%
-    esp32Controller.GND ~ rail_3v3_capacitor.unnamed[0]
-    esp32Controller.P3V3 ~ rail_3v3_capacitor.unnamed[1]
+    esp32Controller.GND ~ rail_3v3_capacitor.unnamed[1]
+    esp32Controller.P3V3 ~ rail_3v3_capacitor.unnamed[0]
 
     # --- Level Shifter Section ---
     levelShifter = new Texas_Instruments_SN74AHCT125PWR_package
@@ -80,5 +80,5 @@ module WLED_Controller:
     # Optional: Decoupling capacitor for 5V rail (for LED stability)
     rail_5v_capacitor = new Capacitor
     rail_5v_capacitor.capacitance = 470uF +/- 10%
-    power_5v.gnd ~ rail_5v_capacitor.unnamed[0]
-    power_5v.vcc ~ rail_5v_capacitor.unnamed[1]
+    power_5v.gnd ~ rail_5v_capacitor.unnamed[1]
+    power_5v.vcc ~ rail_5v_capacitor.unnamed[0]
