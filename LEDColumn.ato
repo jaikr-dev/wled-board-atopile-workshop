@@ -1,0 +1,31 @@
+#pragma experiment("FOR_LOOP")
+
+import ElectricPower
+import Resistor
+import Electrical, Capacitor
+
+from "parts/XINGLIGHT_XL_5050RGBC_WS2812B/XINGLIGHT_XL_5050RGBC_WS2812B.ato" import XINGLIGHT_XL_5050RGBC_WS2812B_package
+
+module LEDColumn:
+    leds = new XINGLIGHT_XL_5050RGBC_WS2812B_package[10]
+    power_5v = new ElectricPower
+    data_out = new Electrical
+    data_in = new Electrical
+
+    # Distribute 5V and GND to all LEDs in the column
+    for led in leds:
+        power_5v.vcc ~ led.VDD
+        power_5v.gnd ~ led.GND
+
+    # Chain data through the column
+    data_in ~ leds[0].DIN
+    leds[0].DOU ~ leds[1].DIN
+    leds[1].DOU ~ leds[2].DIN
+    leds[2].DOU ~ leds[3].DIN
+    leds[3].DOU ~ leds[4].DIN
+    leds[4].DOU ~ leds[5].DIN
+    leds[5].DOU ~ leds[6].DIN
+    leds[6].DOU ~ leds[7].DIN
+    leds[7].DOU ~ leds[8].DIN
+    leds[8].DOU ~ leds[9].DIN
+    leds[9].DOU ~ data_out
