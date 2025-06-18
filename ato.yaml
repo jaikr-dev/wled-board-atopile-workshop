@@ -1,0 +1,22 @@
+requires-atopile: "0.9.2"
+
+paths:
+  src: ./
+  layout: ./layouts
+
+builds:
+  default:
+    entry: main.ato:App
+
+# This metadata is only required for publishing
+# Uncomment it and fill out the fields to publish your package
+# package:
+#   identifier: # fill me!/wled_board
+#   repository: # fill me!
+#   version: "0.1.0"  # recommended first version
+#   authors:
+#     - name: Jai Kumaar Ratadia
+#       email: jaikumaarratadia@gmail.com
+#   summary: # fill me!
+#   license: Apache Software License 2.0
+#   homepage: # fill me!
