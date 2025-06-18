@@ -1,0 +1,11 @@
+{
+    "version": "2.0",
+    "by-layout": {
+        "C:\\Users\\amcch\\wled_board\\layouts\\default\\default.kicad_pcb": {
+            "layouts": "C:\\Users\\amcch\\wled_board\\build\\builds\\default\\default.layouts.json"
+        },
+        "C:\\Users\\amcch\\wled_board\\layouts\\led_column\\led_column.kicad_pcb": {
+            "layouts": "C:\\Users\\amcch\\wled_board\\build\\builds\\led_column\\led_column.layouts.json"
+        }
+    }
+}
