@@ -22,10 +22,6 @@ module WLED_Controller:
     usb_c_connector.VBUS ~ power_5v.vcc
     usb_c_connector.GND ~ power_5v.gnd
 
-    # Fuse on 5V line for protection
-    fuse_5a = new XFCN_PTF_15_package
-    fuse_5a.1 ~ power_5v.vcc
-
     # --- ESP32 Controller Section ---
     esp32Controller = new Espressif_Systems_ESP32_WROOM_32_N4_package
 
@@ -41,9 +37,8 @@ module WLED_Controller:
     # --- Level Shifter Section ---
     levelShifter = new Texas_Instruments_SN74AHCT125PWR_package
 
-    # Level shifter powered from fused 5V
-    # (already connected above: fuse_5a.2 ~ levelShifter.VCC)
     levelShifter.GND ~ power_5v.gnd
+    levelShifter.VCC ~ power_5v.vcc
 
     # Decoupling capacitor for level shifter
     levelShifter_capacitor = new Capacitor
@@ -52,11 +47,8 @@ module WLED_Controller:
     levelShifter.GND ~ levelShifter_capacitor.unnamed[0]
     levelShifter.VCC ~ levelShifter_capacitor.unnamed[1]
 
-    # Fuse output powers level shifter and (optionally) other 5V peripherals
-    fuse_5a.2 ~ levelShifter.VCC
-
     # --- LED Array Section ---
-    led_columns = new LEDColumn[10]
+    led_columns = new LEDColumn[5]
 
     # Distribute 5V power to all LED columns
     for led_column in led_columns:
@@ -84,11 +76,6 @@ module WLED_Controller:
     led_columns[1].data_out ~ led_columns[2].data_in
     led_columns[2].data_out ~ led_columns[3].data_in
     led_columns[3].data_out ~ led_columns[4].data_in
-    led_columns[4].data_out ~ led_columns[5].data_in
-    led_columns[5].data_out ~ led_columns[6].data_in 
-    led_columns[6].data_out ~ led_columns[7].data_in
-    led_columns[7].data_out ~ led_columns[8].data_in
-    led_columns[8].data_out ~ led_columns[9].data_in
 
     # Optional: Decoupling capacitor for 5V rail (for LED stability)
     rail_5v_capacitor = new Capacitor

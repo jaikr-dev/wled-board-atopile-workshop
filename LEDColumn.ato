@@ -7,7 +7,7 @@ import Electrical, Capacitor
 from "parts/XINGLIGHT_XL_5050RGBC_WS2812B/XINGLIGHT_XL_5050RGBC_WS2812B.ato" import XINGLIGHT_XL_5050RGBC_WS2812B_package
 
 module LEDColumn:
-    leds = new XINGLIGHT_XL_5050RGBC_WS2812B_package[10]
+    leds = new XINGLIGHT_XL_5050RGBC_WS2812B_package[5]
     power_5v = new ElectricPower
     data_out = new Electrical
     data_in = new Electrical
@@ -23,9 +23,4 @@ module LEDColumn:
     leds[1].DOU ~ leds[2].DIN
     leds[2].DOU ~ leds[3].DIN
     leds[3].DOU ~ leds[4].DIN
-    leds[4].DOU ~ leds[5].DIN
-    leds[5].DOU ~ leds[6].DIN
-    leds[6].DOU ~ leds[7].DIN
-    leds[7].DOU ~ leds[8].DIN
-    leds[8].DOU ~ leds[9].DIN
-    leds[9].DOU ~ data_out
+    leds[4].DOU ~ data_out
