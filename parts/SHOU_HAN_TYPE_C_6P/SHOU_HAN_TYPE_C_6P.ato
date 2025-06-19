@@ -7,7 +7,7 @@ import is_auto_generated
 component SHOU_HAN_TYPE_C_6P_package:
     # This trait marks this file as auto-generated
     # If you want to manually change it, remove the trait
-    trait is_auto_generated<system="ato_part", source="easyeda:C456012", date="2025-06-18T19:21:13.774618+00:00", checksum="8239e864b2fe03a740d9853aca145a2fdd7ac21c095742b6add5ad46082153b9">
+    #trait is_auto_generated<system="ato_part", source="easyeda:C456012", date="2025-06-18T19:21:13.774618+00:00", checksum="8239e864b2fe03a740d9853aca145a2fdd7ac21c095742b6add5ad46082153b9">
 
     trait is_atomic_part<manufacturer="SHOU HAN", partnumber="TYPE-C 6P", footprint="TYPE-C-SMD_TYPE-C-6P.kicad_mod", symbol="TYPE-C6P.kicad_sym", model="TYPE-C-SMD_6P-L8.9-W6.8-H3.2-P1.00.step">
     trait has_part_picked::by_supplier<supplier_id="lcsc", supplier_partno="C456012", manufacturer="SHOU HAN", partno="TYPE-C 6P">

@@ -7,7 +7,7 @@ import is_auto_generated
 component XFCN_PTF_15_package:
     # This trait marks this file as auto-generated
     # If you want to manually change it, remove the trait
-    trait is_auto_generated<system="ato_part", source="easyeda:C842712", date="2025-06-18T19:27:50.800606+00:00", checksum="f2e59579de3da15e5523f475569ef66b6c8a4207f3e721e1ef59a9d9671e59b9">
+    #trait is_auto_generated<system="ato_part", source="easyeda:C842712", date="2025-06-18T19:27:50.800606+00:00", checksum="f2e59579de3da15e5523f475569ef66b6c8a4207f3e721e1ef59a9d9671e59b9">
 
     trait is_atomic_part<manufacturer="XFCN", partnumber="PTF-15", footprint="FUSE-TH_L22.0-W9.0-P22.60.kicad_mod", symbol="PTF-15.kicad_sym", model="FUSE-TH_L22.3-W9.0.step">
     trait has_part_picked::by_supplier<supplier_id="lcsc", supplier_partno="C842712", manufacturer="XFCN", partno="PTF-15">

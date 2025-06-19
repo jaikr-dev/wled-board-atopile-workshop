@@ -7,7 +7,7 @@ import is_auto_generated
 component Texas_Instruments_SN74AHCT125PWR_package:
     # This trait marks this file as auto-generated
     # If you want to manually change it, remove the trait
-    trait is_auto_generated<system="ato_part", source="easyeda:C36365", date="2025-06-18T17:44:56.768134+00:00", checksum="7d24b7ff2619bb2dd0ab53696ca7fccafcacb997928accacfe6b01c270840a2f">
+    #trait is_auto_generated<system="ato_part", source="easyeda:C36365", date="2025-06-18T17:44:56.768134+00:00", checksum="7d24b7ff2619bb2dd0ab53696ca7fccafcacb997928accacfe6b01c270840a2f">
 
     trait is_atomic_part<manufacturer="Texas Instruments", partnumber="SN74AHCT125PWR", footprint="TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL.kicad_mod", symbol="SN74AHCT125PWR.kicad_sym", model="TSSOP-14_L5.0-W4.4-H1.0-LS6.4-P0.65.step">
     trait has_part_picked::by_supplier<supplier_id="lcsc", supplier_partno="C36365", manufacturer="Texas Instruments", partno="SN74AHCT125PWR">

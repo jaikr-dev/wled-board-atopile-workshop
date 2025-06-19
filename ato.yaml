@@ -10,7 +10,6 @@ builds:
 
   led_column:
     entry: LEDColumn.ato:LEDColumn
-
 # This metadata is only required for publishing
 # Uncomment it and fill out the fields to publish your package
 # package:
