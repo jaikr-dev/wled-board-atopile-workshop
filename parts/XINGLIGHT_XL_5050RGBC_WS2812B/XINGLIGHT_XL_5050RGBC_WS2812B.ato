@@ -7,7 +7,7 @@ import is_auto_generated
 component XINGLIGHT_XL_5050RGBC_WS2812B_package:
     # This trait marks this file as auto-generated
     # If you want to manually change it, remove the trait
-    trait is_auto_generated<system="ato_part", source="easyeda:C2843785", date="2025-06-18T17:44:37.481377+00:00", checksum="6dc57bc30901f0fcacd10d5296bd83a40dff3cf7eb87b1e80c652758e8b83e1a">
+    #trait is_auto_generated<system="ato_part", source="easyeda:C2843785", date="2025-06-18T17:44:37.481377+00:00", checksum="6dc57bc30901f0fcacd10d5296bd83a40dff3cf7eb87b1e80c652758e8b83e1a">
 
     trait is_atomic_part<manufacturer="XINGLIGHT", partnumber="XL-5050RGBC-WS2812B", footprint="LED-SMD_4P-L5.0-W5.0-BL_XL-5050RGBC.kicad_mod", symbol="XL-5050RGBC-WS2812B.kicad_sym", model="LED-SMD_4P-L5.0-W5.0-BL_XL-5050RGBC.step">
     trait has_part_picked::by_supplier<supplier_id="lcsc", supplier_partno="C2843785", manufacturer="XINGLIGHT", partno="XL-5050RGBC-WS2812B">

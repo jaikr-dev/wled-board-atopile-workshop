@@ -7,7 +7,7 @@ import is_auto_generated
 component Espressif_Systems_ESP32_WROOM_32_N4_package:
     # This trait marks this file as auto-generated
     # If you want to manually change it, remove the trait
-    trait is_auto_generated<system="ato_part", source="easyeda:C82899", date="2025-06-18T17:43:45.959613+00:00", checksum="c0418d414c8c7838c88d338eaae93f73c9eda4389c060f809b80beefea240008">
+    #trait is_auto_generated<system="ato_part", source="easyeda:C82899", date="2025-06-18T17:43:45.959613+00:00", checksum="c0418d414c8c7838c88d338eaae93f73c9eda4389c060f809b80beefea240008">
 
     trait is_atomic_part<manufacturer="Espressif Systems", partnumber="ESP32-WROOM-32-N4", footprint="WIFIM-SMD_ESP32-WROOM-32-N4.kicad_mod", symbol="ESP32-WROOM-32.kicad_sym", model="WIFIM-SMD_ESP32-WROOM-32-N4.STEP">
     trait has_part_picked::by_supplier<supplier_id="lcsc", supplier_partno="C82899", manufacturer="Espressif Systems", partno="ESP32-WROOM-32-N4">
