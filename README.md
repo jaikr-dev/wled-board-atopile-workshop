@@ -58,10 +58,10 @@ led_columns[1].data_out ~ led_columns[2].data_in
 
 That's it. No manual component placement, no repetitive connections. Define the pattern once, scale it infinitely.
 
-### The Circuit Reality
+### The Circuit Reality (It's pretty simple)
 - **ESP32-WROOM-32-N4**: WiFi-enabled microcontroller running the show
 - **SN74AHCT125PWR**: Level shifter converting 3.3V logic to 5V LED signals  
-- **USB-C power**: Clean 5V input with proper decoupling (470µF caps where they matter)
+- **USB-C power**: Clean 5V input with proper decoupling (470µF caps where they belong)
 - **100Ω series resistor**: Signal integrity for the data line
 - **25 WS2812B LEDs**: Individually addressable RGB pixels in a 5×5 matrix
 
