@@ -1,0 +1,121 @@
+(footprint "easyeda2kicad:CASE-D_7343"
+    (layer "F.Cu")
+    (descr "")
+    (version 20241229)
+    (generator "faebryk")
+    (generator_version "v5")
+    (tedit "5DC5F6A4")
+    (property "Reference" "REF**"
+        (at 0 -4 0)
+        (layer "F.SilkS")
+        (hide no)
+        (uuid "cf0e0dc8-d761-4ae6-9042-b7adb3d3173b")
+        (effects
+            (font
+                (size 1 1)
+                (thickness 0.15)
+            )
+        )
+    )
+    (property "Value" "CASE-D_7343"
+        (at 0 4 0)
+        (layer "F.Fab")
+        (hide no)
+        (uuid "1a28af35-0725-4b0c-8899-3a7855ffe57b")
+        (effects
+            (font
+                (size 1 1)
+                (thickness 0.15)
+            )
+        )
+    )
+    (attr smd)
+    (fp_line
+        (start 1.1 2.3)
+        (end 1.1 -2.3)
+        (stroke
+            (width 0.4)
+            (type solid)
+        )
+        (layer "F.SilkS")
+        (uuid "29e1325e-899d-423b-b08c-0c8fac7d8d9b")
+    )
+    (fp_line
+        (start -3.7 -2.3)
+        (end 3.6 -2.3)
+        (stroke
+            (width 0.4)
+            (type solid)
+        )
+        (layer "F.SilkS")
+        (uuid "6fe01839-857a-4501-aca1-b241bb145c88")
+    )
+    (fp_line
+        (start 3.7 2.3)
+        (end -3.6 2.3)
+        (stroke
+            (width 0.4)
+            (type solid)
+        )
+        (layer "F.SilkS")
+        (uuid "0ebf18a0-c273-4c9f-b1e9-f11665394e81")
+    )
+    (fp_circle
+        (center 3.65 -2.15)
+        (end 3.68 -2.15)
+        (stroke
+            (width 0.06)
+            (type solid)
+        )
+        (fill no)
+        (layer "F.Fab")
+        (uuid "a0f26c46-66a8-4bb9-8dc5-482df7254244")
+    )
+    (fp_text user "%R"
+        (at 0 0 0)
+        (layer "F.Fab")
+        (uuid "8cf51ed3-5fbb-440e-9409-6d033904bb4b")
+        (effects
+            (font
+                (size 1 1)
+                (thickness 0.15)
+            )
+        )
+        (unlocked no)
+    )
+    (fp_text user "${REFERENCE}"
+        (at 0 -4 0)
+        (layer "F.SilkS")
+        (uuid "cf0e0dc8-d761-4ae6-9042-b7adb3d3173b")
+        (effects
+            (font
+                (size 1 1)
+                (thickness 0.15)
+            )
+        )
+        (unlocked no)
+    )
+    (pad "1" smd rect
+        (at 3 0 180)
+        (size 2.8 3.01)
+        (layers "F.Cu" "F.Paste" "F.Mask")
+        (uuid "9bf4a3ce-9b29-4262-86ff-f118e7bb3500")
+    )
+    (pad "2" smd rect
+        (at -3 0 180)
+        (size 2.8 3.01)
+        (layers "F.Cu" "F.Paste" "F.Mask")
+        (uuid "63d5fb91-e64c-46b1-9978-00f3982aeff7")
+    )
+    (model "${KIPRJMOD}\\..\\..\build\\cache\\parts\\easyeda\\C7229\\CASE-D_L7.3-W4.3-H2.9.step"
+        (offset
+            (xyz 0 0 0)
+        )
+        (scale
+            (xyz 1 1 1)
+        )
+        (rotate
+            (xyz 0 0 180)
+        )
+    )
+)
